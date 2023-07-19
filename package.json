@@ -6,17 +6,39 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "prepare": "husky install",
+        "c": "git add . && git-cz"
+    },
+    "lint-staged": {
+        "*.js": "eslint --fix"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-conventional-changelog"
+        }
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
     },
     "dependencies": {
         "vue": "^3.3.4"
     },
     "devDependencies": {
+        "@commitlint/cli": "^17.6.7",
+        "@commitlint/config-conventional": "^17.6.7",
         "@typescript-eslint/eslint-plugin": "^6.1.0",
         "@typescript-eslint/parser": "^6.1.0",
         "@vitejs/plugin-vue": "^4.2.3",
+        "commitizen": "^4.3.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "cz-customizable": "^7.0.0",
         "eslint": "^8.45.0",
         "eslint-plugin-vue": "^9.15.1",
-        "vite": "^4.4.0"
+        "husky": "^8.0.3",
+        "lint-staged": "^13.2.3",
+        "vite": "^4.2.0"
     }
 }
