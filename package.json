@@ -2,20 +2,19 @@
     "name": "Engineering",
     "private": true,
     "version": "0.0.0",
-    "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
         "prepare": "husky install",
-        "c": "git add . && git-cz"
+        "cz": "git add . && git-cz"
     },
     "lint-staged": {
         "*.js": "eslint --fix"
     },
     "config": {
         "commitizen": {
-            "path": "node_modules/cz-conventional-changelog"
+          "path": "./node_modules/cz-customizable"
         }
     },
     "commitlint": {
