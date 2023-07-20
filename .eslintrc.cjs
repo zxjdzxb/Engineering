@@ -31,6 +31,5 @@ module.exports = {
         "vue"
     ],
     "rules": {
-      "no-undef": "off",
     }
 }
