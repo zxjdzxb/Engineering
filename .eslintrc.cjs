@@ -31,5 +31,6 @@ module.exports = {
         "vue"
     ],
     "rules": {
+
     }
 }

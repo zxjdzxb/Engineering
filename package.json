@@ -14,7 +14,7 @@
     },
     "config": {
         "commitizen": {
-          "path": "node_modules/cz-customizable"
+            "path": "node_modules/cz-customizable"
         }
     },
     "commitlint": {
@@ -23,11 +23,13 @@
         ]
     },
     "dependencies": {
-        "vue": "^3.3.4"
+        "vue": "^3.3.4",
+        "vue-router": "^4.2.4"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.6.7",
         "@commitlint/config-conventional": "^17.6.7",
+        "@types/node": "^20.4.5",
         "@typescript-eslint/eslint-plugin": "^6.1.0",
         "@typescript-eslint/parser": "^6.1.0",
         "@vitejs/plugin-vue": "^4.2.3",
